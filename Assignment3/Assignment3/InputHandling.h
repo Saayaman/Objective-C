@@ -11,7 +11,6 @@
 @interface InputHandling : NSObject
 
 
-@property NSString *converted;
-- (instancetype)init;
++ (NSString *) getUserInput;
 
 @end

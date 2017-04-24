@@ -13,64 +13,42 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        
- 
-        NSLog(@"What would you like to do next?\nnew - Create a new contact \nlist - List all contacts\n quit - Exit Application ");
+
+        NSString *menu = @"What would you like to do next?\nnew - Create a new contact \nlist - List all contacts\nquit - Exit Application ";
+        InputCollector *input = [[InputCollector alloc]init];
         
         Contact *contact;
         ContactList *contactlist = [ContactList new];
         
         
         while (true) {
+            NSString *uInput = [input inputForPrompt:menu];
+//            NSLog(@"%@", uInput);
             
-            NSLog(@"Your next action?: ");
-            
-            char menuinput[255];
-            fgets(menuinput, 255, stdin);
-            
-            InputCollector *input = [[InputCollector alloc]init];
-            
-            NSString *convertC = [NSString stringWithCString:menuinput encoding:1];
-            NSString *input1 = [input inputForPrompt:convertC];
-            
-            NSLog(@"%@", input1);
-        
-        if ([input1 isEqualToString:@"quit"]) {
-            NSLog(@"Adieu mon ami");
-            break;
-        } else if([input1 isEqualToString:@"new"]) {
-            
-            NSLog(@"What is your name?");
-            fgets(menuinput, 255, stdin);
-            NSString *convertName = [NSString stringWithCString:menuinput encoding:1];
-            NSString *name = [input inputForPrompt:convertName];
-            
-            NSLog(@"What is your Email?");
-            fgets(menuinput, 255, stdin);
-            NSString *convertEmail = [NSString stringWithCString:menuinput encoding:1];
-            NSString *email = [input inputForPrompt:convertEmail];
-            
-            // init
-            contact = [[Contact alloc]initWithName:name WithEmail:email];
-            NSLog(@"%@", contact);
-            
-            //[contact addcontact(contact)]
-            
-            [contactlist addContact:contact];
-            NSLog(@"%@", contactlist);
+            if ([uInput isEqualToString:@"quit"]) {
+                NSLog(@"Adieu mon ami");
+                break;
+            } else if([uInput isEqualToString:@"new"]) {
+                NSString *name = [input inputForPrompt:@"What is your name?"];
+                NSString *email = [input inputForPrompt:@"What is your Email?"];
+                
+                // init
+                contact = [[Contact alloc]initWithName:name WithEmail:email];
+                NSLog(@"%@", contact);
+                
+                [contactlist addContact:contact];
+                NSLog(@"%@", contactlist);
 
-        } else if([input1 isEqualToString:@"list"]){
-            
-            for(int i = 0; i < contactlist.contactAry.count; i++){
-                NSLog(@"%@", contactlist.contactAry[i]);
+            } else if([uInput isEqualToString:@"list"]){
+                
+                for(int i = 0; i < contactlist.contactAry.count; i++){
+                    NSLog(@"%@", contactlist.contactAry[i]);
+                }
+                
+            } else {
+                NSLog(@"Wrong input!");
             }
             
-            
-        } else {
-            NSLog(@"Wrong input!");
-            
-        }
-        
         }
         
     }

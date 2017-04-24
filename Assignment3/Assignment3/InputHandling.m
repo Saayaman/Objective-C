@@ -7,22 +7,20 @@
 //
 
 #import "InputHandling.h"
-NSString *converted;
-
 
 @implementation InputHandling
 
 //classのinstanceを返す
-- (instancetype)init{
-    self = [super init];
-    if(self){
-        char answer[255];
-        fgets(answer, 255, stdin);
-        NSString *convertA = [NSString stringWithCString:answer encoding:NSASCIIStringEncoding];
-//        NSInteger convertB = [convertA integerValue];
-        self.converted = [convertA stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    }
-    return self;
++ (NSString *) getUserInput {
+    char answer[255];
+    fgets(answer, 255, stdin);
+    NSString *convertA = [NSString stringWithCString:answer encoding:NSASCIIStringEncoding];
+    
+    return [convertA stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
+
+
+
+
 
 @end

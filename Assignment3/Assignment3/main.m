@@ -26,15 +26,12 @@ int main(int argc, const char * argv[]) {
             //2. To prompt the user to input their answer
             NSLog(@"Write your answer: ");
 
-            InputHandling *inputHandle = [[InputHandling alloc]init];
-            
             //3: To parse the user's inputted answer and convert it to a primitive NSInteger
-            NSInteger convertB = [inputHandle.converted intValue];
+            NSInteger convertB = [[InputHandling getUserInput] intValue];
 
             
             //4: The app will log "Right!" for correct and "Wrong!" for incorrect answers
-        
-            
+          
             if (cpanswer == convertB) {
                 NSLog(@"Right!");
                 score++;
@@ -47,22 +44,13 @@ int main(int argc, const char * argv[]) {
             
             //6: To add the ability to exit the game
             NSLog(@"Do you want to play again?[Yes/No]: ");
+
+            NSString* nospacestring = [InputHandling getUserInput];
             
-            char YorN[10];
-            fgets(YorN, 10, stdin);
-            NSString *convertC = [NSString stringWithCString:YorN encoding:NSASCIIStringEncoding];
-
-            //Using Characterset No whitespace to strip newilne and space
-            NSArray* words = [convertC componentsSeparatedByCharactersInSet :[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-            NSString* nospacestring = [words componentsJoinedByString:@""];
-
             if([nospacestring caseInsensitiveCompare:@"no"] == NSOrderedSame){
                 boo = false;
             }
-//          同じ
-//            if([nospacestring  isEqual: @"no"]){
-//                boo = false;
-//            }
+
         }
         
     }

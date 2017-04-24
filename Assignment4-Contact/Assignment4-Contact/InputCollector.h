@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "InputHandling.h"
+
 
 @interface InputCollector : NSObject
 
-@property NSString * promptString;
+@property NSString *input;
 -(NSString *)inputForPrompt:(NSString *)promptString;
 
 
