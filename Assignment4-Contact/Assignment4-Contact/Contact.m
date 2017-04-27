@@ -6,27 +6,32 @@
 //  Copyright © 2017 ayako_sayama. All rights reserved.
 //
 
+
 #import "Contact.h"
+#import "ContactList.h"
 
 @implementation Contact
 
-NSString *name;
-NSString *email;
 
-- (instancetype)initWithName: (NSString*) name WithEmail: (NSString*)email {
+- (instancetype)initWithName: (NSString*) name WithEmail: (NSString*)email  {
     
     self = [super init];
     if(self){
         self.name = name;
         self.email = email;
+        self.phone = [NSMutableDictionary dictionary];
     }
     
     return self;
 }
 
-- (NSString *)description {
 
-    NSString *str = [NSString stringWithFormat:@"%@, %@", [self name], _email];
+
+- (NSString *)description {
+ 
+    NSString *str = [NSString stringWithFormat:@"%@, %@, %@", [self name], [self email], [self phone]];
+    
+    NSLog(@"This is inside description: %@",str);
     return str;
 }
 

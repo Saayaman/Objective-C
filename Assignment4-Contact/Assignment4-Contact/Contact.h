@@ -12,7 +12,7 @@
 
 @property NSString *name;
 @property NSString *email;
-
+@property NSMutableDictionary *phone;
 
 - (instancetype)initWithName: (NSString*) name WithEmail: (NSString*)email;
 

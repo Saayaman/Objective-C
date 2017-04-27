@@ -69,7 +69,6 @@
 		748E60D41EAAB1AA00E6980B /* Assignment4-Contact */ = {
 			isa = PBXGroup;
 			children = (
-				748E60E21EAAB2D600E6980B /* New Group */,
 				74ECABD91EAEA03900D10C9E /* InputHandling.h */,
 				74ECABDA1EAEA03900D10C9E /* InputHandling.m */,
 				748E60D51EAAB1AA00E6980B /* main.m */,
@@ -81,13 +80,6 @@
 				748E60E41EAAB2E200E6980B /* InputCollector.m */,
 			);
 			path = "Assignment4-Contact";
-			sourceTree = "<group>";
-		};
-		748E60E21EAAB2D600E6980B /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

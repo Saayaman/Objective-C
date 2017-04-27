@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		743C85551EB160570005C41C /* InputHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 743C85541EB160570005C41C /* InputHandling.m */; };
 		74ECABD01EAE9C5700D10C9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ECABCF1EAE9C5700D10C9E /* main.m */; };
 		74ECABD81EAE9CBF00D10C9E /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ECABD71EAE9CBF00D10C9E /* AdditionQuestion.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		743C85531EB160570005C41C /* InputHandling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandling.h; sourceTree = "<group>"; };
+		743C85541EB160570005C41C /* InputHandling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandling.m; sourceTree = "<group>"; };
 		74ECABCC1EAE9C5700D10C9E /* Assignement5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Assignement5; sourceTree = BUILT_PRODUCTS_DIR; };
 		74ECABCF1EAE9C5700D10C9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74ECABD61EAE9CBF00D10C9E /* AdditionQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionQuestion.h; sourceTree = "<group>"; };
@@ -63,6 +66,8 @@
 				74ECABCF1EAE9C5700D10C9E /* main.m */,
 				74ECABD61EAE9CBF00D10C9E /* AdditionQuestion.h */,
 				74ECABD71EAE9CBF00D10C9E /* AdditionQuestion.m */,
+				743C85531EB160570005C41C /* InputHandling.h */,
+				743C85541EB160570005C41C /* InputHandling.m */,
 			);
 			path = Assignement5;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				743C85551EB160570005C41C /* InputHandling.m in Sources */,
 				74ECABD01EAE9C5700D10C9E /* main.m in Sources */,
 				74ECABD81EAE9CBF00D10C9E /* AdditionQuestion.m in Sources */,
 			);
@@ -254,6 +260,7 @@
 				74ECABD51EAE9C5700D10C9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
