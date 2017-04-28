@@ -7,7 +7,25 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Dice.h"
+
 
 @interface GameController : NSObject
+
+@property NSMutableArray* holdie;
+@property NSMutableArray* collection;
+
+
+- (void) roll;
+- (void)addDice:(Dice*) dice;
+
+- (void) holdDice: (Dice*)dice;
+- (BOOL) holdinArray: (NSString*) diceNum;
+
+- (void)printDiceandScore;
+- (void)printHeldDice;
+- (void)resetDice;
+- (void)getScore;
+- (void)printALL;
 
 @end

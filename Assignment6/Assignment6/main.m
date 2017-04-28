@@ -9,78 +9,68 @@
 #import <Foundation/Foundation.h>
 #import "Dice.h"
 #import "GetInput.h"
+#import "GameController.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        Dice *dice1 = [[Dice alloc]init];
-        Dice *dice2 = [Dice new];
-        Dice *dice3 = [Dice new];
-        Dice *dice4 = [Dice new];
-        Dice *dice5 = [Dice new];
-       
-        NSMutableArray *holds = [[NSMutableArray alloc] init];
+        
+        GameController *controller = [[GameController alloc]init];
+        NSInteger rollCount = 5;
         
         while(true){
 
-            NSLog(@"Choose an Action: [roll,] \n");
-            NSString *input = [GetInput getUserInput];
+            NSLog(@"Choose an Action: [roll(%ld),reset,] \n", (long)rollCount);
             
-            if ([input isEqualToString:@"roll"]) {
+            if (rollCount == 0) {
                 
-                NSLog(@"1: ");
-                [dice1 setScore:[Dice randomDice]];
-                NSLog(@"2: ");
-                [dice2 setScore:[Dice randomDice]];
-                NSLog(@"3: ");
-                [dice3 setScore:[Dice randomDice]];
-                NSLog(@"4: ");
-                [dice4 setScore:[Dice randomDice]];
-                NSLog(@"5: ");
-                [dice5 setScore:[Dice randomDice]];
-//                NSMutableArray *dices = @[dice1,dice2,dice3,dice4,dice5];
-                NSLog(@"Enter Dice# for hold or Enter [stop]");
-                
+                [controller getScore];
+                break;
             }
             
-            //store all dices:
-        
-            //hold dices
-            NSLog(@"Enter Dice# for hold or Enter [stop]");
-            NSString *hold;
-            hold = [GetInput getUserInput];
-            
-            while ([hold isNotEqualTo:@"stop"]) {
+            NSString *input = [GetInput getUserInput];
+            if ([input isEqualToString:@"roll"]) {
+                rollCount--;
+                [controller roll];
                 
-                if ([hold isEqualToString:@"1"]) {
-                    [holds addObject:dice1];
-                } else if([hold isEqualToString:@"2"]){
-                    [holds addObject:dice2];
-                } else if([hold isEqualToString:@"3"]){
-                    [holds addObject:dice3];
-                } else if([hold isEqualToString:@"4"]){
-                    [holds addObject:dice4];
-                } else if([hold isEqualToString:@"5"]){
-                    [holds addObject:dice5];
+                
+                
+                NSLog(@"Enter Dice# for hold or Enter [stop]");
+                BOOL stop = false;
+                do{
+                    NSString *diceNum = [GetInput getUserInput];
+                    stop = [controller holdinArray:diceNum];
+                    
+                }while(!stop);
+                
+                NSInteger count = 0;
+                for (Dice *dice in controller.collection) {
+                    if (dice.hold == true) {
+                        [controller.holdie addObject: dice];
+//                        [controller.collection removeObject:dice];
+                        count++;
+                    }
                 }
                 
-                hold = [GetInput getUserInput];
+                for (int z = 0; z < count; z++) {
+                    
+                    NSLog(@"Removed index: %lu",controller.collection.count-1);
+                    [controller.collection removeObject:controller.collection[controller.collection.count-1]];
+                    
+                }
+                
+                //Print: held dices!
+                [controller printALL];
+            
+                
+            } else if([input isEqualToString:@"reset"]){
+                [controller resetDice];
             }
 
-            NSLog(@"The Holds Dice: %@",holds);
-            
-            
+
+
         }
         
     }
     return 0;
-}
-
-int generateQ(void){
-    float num1 = arc4random_uniform(100)/(float)100;
-    float num2 = arc4random() % 100/(float)100;
-    
-    NSLog(@"What is the answer of %.2f + %.2f??",num1,num2);
-    int newanswer = num1+num2;
-    return newanswer;
 }

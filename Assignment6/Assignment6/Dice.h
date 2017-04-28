@@ -11,10 +11,13 @@
 @interface Dice : NSObject
 
 @property NSInteger score;
+@property BOOL hold;
 
 
 - (instancetype)initWithScore:(NSInteger)score;
-+ (int)randomDice;
+- (NSInteger) randomDice;
 //+ (NSString*) randomDice;
+
+
 
 @end
