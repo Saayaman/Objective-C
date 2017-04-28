@@ -16,7 +16,7 @@
 
 -(void) addContact:(Contact *) contact;
 - (void)searchName:(NSString*) name;
-- (NSInteger)findDuplicate:(NSString*) name;
+- (BOOL)findDuplicate:(NSString*) name;
 - (void)listALL;
 
 @end

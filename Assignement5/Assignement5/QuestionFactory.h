@@ -1,5 +1,5 @@
 //
-//  AdditionQuestion.h
+//  QuestionFactory.h
 //  Assignement5
 //
 //  Created by ayako_sayama on 2017-04-27.
@@ -7,10 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Question.h"
 
-@interface AdditionQuestion : Question
+@interface QuestionFactory : NSObject
 
-
++ (Question*)generateRandomQuestion;
 
 @end

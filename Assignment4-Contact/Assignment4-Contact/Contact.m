@@ -26,7 +26,6 @@
 }
 
 
-
 - (NSString *)description {
  
     NSString *str = [NSString stringWithFormat:@"%@, %@, %@", [self name], [self email], [self phone]];

@@ -1,5 +1,5 @@
 //
-//  AdditionQuestion.h
+//  QuestionManager.h
 //  Assignement5
 //
 //  Created by ayako_sayama on 2017-04-27.
@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "Question.h"
 
-@interface AdditionQuestion : Question
+@interface QuestionManager : NSObject
 
-
-
+@property NSMutableArray *questions;
+- (void) addQuestion:(Question *) question;
+- (NSString*) timeOutput;
 @end

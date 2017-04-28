@@ -14,7 +14,6 @@
     char answer[255];
     fgets(answer, 255, stdin);
     NSString *convertA = [NSString stringWithCString:answer encoding:NSASCIIStringEncoding];
-    
     return [convertA stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 

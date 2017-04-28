@@ -1,5 +1,5 @@
 //
-//  AdditionQuestion.h
+//  SubtractionQuestion.h
 //  Assignement5
 //
 //  Created by ayako_sayama on 2017-04-27.
@@ -9,8 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Question.h"
 
-@interface AdditionQuestion : Question
-
+@interface SubtractionQuestion : Question
 
 
 @end

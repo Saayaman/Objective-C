@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		743565491EB2A08500CA4E18 /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 743565481EB2A08500CA4E18 /* QuestionManager.m */; };
+		743565511EB2B20200CA4E18 /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 743565501EB2B20200CA4E18 /* AdditionQuestion.m */; };
+		743565541EB2B91000CA4E18 /* SubtractionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 743565531EB2B91000CA4E18 /* SubtractionQuestion.m */; };
+		743565571EB2B98400CA4E18 /* QuestionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 743565561EB2B98400CA4E18 /* QuestionFactory.m */; };
 		743C85551EB160570005C41C /* InputHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 743C85541EB160570005C41C /* InputHandling.m */; };
 		74ECABD01EAE9C5700D10C9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ECABCF1EAE9C5700D10C9E /* main.m */; };
-		74ECABD81EAE9CBF00D10C9E /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ECABD71EAE9CBF00D10C9E /* AdditionQuestion.m */; };
+		74ECABD81EAE9CBF00D10C9E /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ECABD71EAE9CBF00D10C9E /* Question.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,12 +29,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		743565471EB2A08500CA4E18 /* QuestionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionManager.h; sourceTree = "<group>"; };
+		743565481EB2A08500CA4E18 /* QuestionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = QuestionManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7435654F1EB2B20200CA4E18 /* AdditionQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionQuestion.h; sourceTree = "<group>"; };
+		743565501EB2B20200CA4E18 /* AdditionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditionQuestion.m; sourceTree = "<group>"; };
+		743565521EB2B91000CA4E18 /* SubtractionQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubtractionQuestion.h; sourceTree = "<group>"; };
+		743565531EB2B91000CA4E18 /* SubtractionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubtractionQuestion.m; sourceTree = "<group>"; };
+		743565551EB2B98400CA4E18 /* QuestionFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionFactory.h; sourceTree = "<group>"; };
+		743565561EB2B98400CA4E18 /* QuestionFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionFactory.m; sourceTree = "<group>"; };
 		743C85531EB160570005C41C /* InputHandling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandling.h; sourceTree = "<group>"; };
 		743C85541EB160570005C41C /* InputHandling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandling.m; sourceTree = "<group>"; };
 		74ECABCC1EAE9C5700D10C9E /* Assignement5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Assignement5; sourceTree = BUILT_PRODUCTS_DIR; };
-		74ECABCF1EAE9C5700D10C9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		74ECABD61EAE9CBF00D10C9E /* AdditionQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionQuestion.h; sourceTree = "<group>"; };
-		74ECABD71EAE9CBF00D10C9E /* AdditionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditionQuestion.m; sourceTree = "<group>"; };
+		74ECABCF1EAE9C5700D10C9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		74ECABD61EAE9CBF00D10C9E /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		74ECABD71EAE9CBF00D10C9E /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Question.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +76,18 @@
 			isa = PBXGroup;
 			children = (
 				74ECABCF1EAE9C5700D10C9E /* main.m */,
-				74ECABD61EAE9CBF00D10C9E /* AdditionQuestion.h */,
-				74ECABD71EAE9CBF00D10C9E /* AdditionQuestion.m */,
+				74ECABD61EAE9CBF00D10C9E /* Question.h */,
+				74ECABD71EAE9CBF00D10C9E /* Question.m */,
 				743C85531EB160570005C41C /* InputHandling.h */,
 				743C85541EB160570005C41C /* InputHandling.m */,
+				743565471EB2A08500CA4E18 /* QuestionManager.h */,
+				743565481EB2A08500CA4E18 /* QuestionManager.m */,
+				7435654F1EB2B20200CA4E18 /* AdditionQuestion.h */,
+				743565501EB2B20200CA4E18 /* AdditionQuestion.m */,
+				743565521EB2B91000CA4E18 /* SubtractionQuestion.h */,
+				743565531EB2B91000CA4E18 /* SubtractionQuestion.m */,
+				743565551EB2B98400CA4E18 /* QuestionFactory.h */,
+				743565561EB2B98400CA4E18 /* QuestionFactory.m */,
 			);
 			path = Assignement5;
 			sourceTree = "<group>";
@@ -131,7 +151,11 @@
 			files = (
 				743C85551EB160570005C41C /* InputHandling.m in Sources */,
 				74ECABD01EAE9C5700D10C9E /* main.m in Sources */,
-				74ECABD81EAE9CBF00D10C9E /* AdditionQuestion.m in Sources */,
+				74ECABD81EAE9CBF00D10C9E /* Question.m in Sources */,
+				743565511EB2B20200CA4E18 /* AdditionQuestion.m in Sources */,
+				743565541EB2B91000CA4E18 /* SubtractionQuestion.m in Sources */,
+				743565571EB2B98400CA4E18 /* QuestionFactory.m in Sources */,
+				743565491EB2A08500CA4E18 /* QuestionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

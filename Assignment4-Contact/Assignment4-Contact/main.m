@@ -10,6 +10,15 @@
 #import "InputCollector.h"
 #import "Contact.h"
 #import "ContactList.h"
+//macro
+#define NEW @"new"
+#define LIST @"list"
+#define FIND @"find"
+#define HISTORY @"history"
+#define QUIT @"quit"
+#define SHOW @"show"
+
+
 
 
 int main(int argc, const char * argv[]) {
@@ -29,61 +38,52 @@ int main(int argc, const char * argv[]) {
             
             NSString *uInput = [input inputForPrompt:menu];
             
-            if ([uInput isEqualToString:@"quit"]) {
+            if ([uInput isEqualToString:QUIT]) {
                 NSLog(@"Adieu mon ami");
                 break;
-            } else if([uInput isEqualToString:@"new"]) {
+            } else if([uInput isEqualToString:NEW]) {
                 
-                action = @"new";
+                action = NEW;
                 
-                NSInteger duplicate = 1;
-                while (duplicate == 1) {
+                do {
                     NSString *name = [input inputForPrompt:@"What is your name?"];
                     NSString *email = [input inputForPrompt:@"What is your Email?"];
                     
-                    
                     // find a Duplicate
-                    duplicate = [contactlist findDuplicate:name];
-                    if (duplicate == 1) {
+                    if ([contactlist findDuplicate:name]) {
                         NSLog(@"The Contact Name is already used. Try again");
+
                     } else {
                         //add to array
                         contact = [[Contact alloc]initWithName:name WithEmail:email];
                         [contactlist addContact:contact];
+                        break;
                     }
-                };
+                } while (true);
                 
-                NSInteger more = 1;
-                while (more == 1) {
+                
+               do {
                     NSString *phoneType = [input inputForPrompt:@"What is the Phone Type?"];
                     NSString *phoneNum = [input inputForPrompt:@"PhoneNumber?"];
                     [[contact phone] setObject:phoneNum forKey:phoneType];
                     
                     NSString *moreNo = [input inputForPrompt:@"Another phone#?[yes/no]"];
                     if ([moreNo isEqualToString:@"no"]){
-                        more = 0;
+                        break;
                     }
-                }
+               } while (true);
                 
                 [contactlist addContact:contact];
+                
+                
 
-            } else if([uInput isEqualToString:@"list"]){
-                action = @"list";
+            } else if([uInput isEqualToString:LIST]){
+                action = LIST;
                 [contactlist listALL];
 
-            
-//                [contactlist.contactAry enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//        
-//                    Contact * contact = (Contact*)obj;
-//                    [contact description];
-//                    
-//                }
-//                 ];
-//                
-
                 
-            } else if([uInput isEqualToString:@"show"]) {
-                action = @"show";
+            } else if([uInput isEqualToString:SHOW]) {
+                action = SHOW;
                 NSString *ID = [input inputForPrompt:@"What is the Contact ID?"];
                 NSInteger ID2  = [ID integerValue];
                 
@@ -100,14 +100,14 @@ int main(int argc, const char * argv[]) {
                     NSLog(@"Not found\n");
                 }
                 
-            } else if([uInput isEqualToString:@"find"]){
-                action = @"find";
+            } else if([uInput isEqualToString:FIND]){
+                action = FIND;
                 NSString *NAME = [input inputForPrompt:@"Find contact by Name?"];
                 NSLog(@"%@The name printed\n",NAME);
                 [contactlist searchName:NAME];
                 
-            } else if([uInput isEqualToString:@"history"]){
-                action = @"history";
+            } else if([uInput isEqualToString:HISTORY]){
+                action = HISTORY;
                 NSLog(@"This is the last 3 actions: %@",history);
                 
             }

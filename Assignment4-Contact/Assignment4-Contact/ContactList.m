@@ -29,13 +29,13 @@
     
 }
 
-- (NSInteger)findDuplicate:(NSString*) name{
+- (BOOL)findDuplicate:(NSString*) name{
     
-    NSInteger matches = 0;
+    BOOL matches = false;
     
     for (Contact *cont in _contactAry) {
         if ([[cont name] isEqualToString: name]) {
-            matches = 1;
+            matches = true;
         }
     }
     return matches;

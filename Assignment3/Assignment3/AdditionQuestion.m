@@ -18,7 +18,7 @@
         NSInteger n1 = arc4random_uniform(90)+11;
         NSInteger n2 = arc4random_uniform(90)+11;
         _answer = n1+n2;
-        _question = [NSString stringWithFormat: @"%ld + %ld?", (long)n1, (long)n2];
+        _question = c
     }
     return self;
 }
