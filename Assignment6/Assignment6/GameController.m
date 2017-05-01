@@ -21,14 +21,17 @@
         
         _collection = [NSMutableArray array];
         _holdie = [NSMutableArray array];
-
-        for (int z = 0; z < 5; z++) {
-            Dice *dice = [[Dice alloc]init];
-            [_collection addObject:dice];
-        }
+        [self initiaLizeDice];
     }
     
     return self;
+}
+
+-(void)initiaLizeDice{
+    for (int z = 0; z < 5; z++) {
+        Dice *dice = [[Dice alloc]init];
+        [_collection addObject:dice];
+    }
 }
 
 - (void)addDice:(Dice*) dice{
@@ -75,7 +78,7 @@
 - (void)printDiceandScore{
     NSMutableString *str = [[NSMutableString alloc] initWithString:@"Dice: "];
     for (Dice *dice in _collection) {
-        [str appendFormat:@"%@, ",[dice description]];
+        [str appendFormat:@"%@",[dice description]];
     }
     NSLog(@"%@",str);
 }
@@ -91,7 +94,8 @@
 
 - (void)resetDice{
     [_holdie removeAllObjects];
-    [self init];
+    [self initiaLizeDice];
+    
 }
 
 - (void)getScore{
@@ -108,7 +112,7 @@
 - (void)printALL{
 
     [self printHeldDice];
-    [self printDiceandScore];
+//    [self printDiceandScore];
     [self getScore];
 }
 

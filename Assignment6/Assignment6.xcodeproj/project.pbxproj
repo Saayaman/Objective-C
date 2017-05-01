@@ -266,6 +266,7 @@
 				743C85441EB0978A0005C41C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

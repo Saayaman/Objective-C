@@ -65,6 +65,7 @@ int main(int argc, const char * argv[]) {
                 
             } else if([input isEqualToString:@"reset"]){
                 [controller resetDice];
+                rollCount = 5;
             }
 
 
