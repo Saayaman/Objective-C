@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		745161A41EB93DD800B9116A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 745161A31EB93DD800B9116A /* main.m */; };
+		745161AC1EB941F300B9116A /* GetInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 745161AB1EB941F300B9116A /* GetInput.m */; };
+		745161AF1EB9489900B9116A /* PaymentGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 745161AE1EB9489900B9116A /* PaymentGateway.m */; };
+		745161B41EB94AA300B9116A /* StripePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 745161B31EB94AA300B9116A /* StripePaymentService.m */; };
+		745161B71EB94AC300B9116A /* PaypaylPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 745161B61EB94AC300B9116A /* PaypaylPaymentService.m */; };
+		745161BA1EB94AD300B9116A /* AmazonPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 745161B91EB94AD300B9116A /* AmazonPaymentService.m */; };
+		745161BD1EB96ABA00B9116A /* ApplePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 745161BC1EB96ABA00B9116A /* ApplePaymentService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7451619E1EB93DD800B9116A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		745161A01EB93DD800B9116A /* Assignment10 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Assignment10; sourceTree = BUILT_PRODUCTS_DIR; };
+		745161A31EB93DD800B9116A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		745161AA1EB941F300B9116A /* GetInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetInput.h; sourceTree = "<group>"; };
+		745161AB1EB941F300B9116A /* GetInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetInput.m; sourceTree = "<group>"; };
+		745161AD1EB9489900B9116A /* PaymentGateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentGateway.h; sourceTree = "<group>"; };
+		745161AE1EB9489900B9116A /* PaymentGateway.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentGateway.m; sourceTree = "<group>"; };
+		745161B21EB94AA300B9116A /* StripePaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StripePaymentService.h; sourceTree = "<group>"; };
+		745161B31EB94AA300B9116A /* StripePaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StripePaymentService.m; sourceTree = "<group>"; };
+		745161B51EB94AC300B9116A /* PaypaylPaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaypaylPaymentService.h; sourceTree = "<group>"; };
+		745161B61EB94AC300B9116A /* PaypaylPaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaypaylPaymentService.m; sourceTree = "<group>"; };
+		745161B81EB94AD300B9116A /* AmazonPaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonPaymentService.h; sourceTree = "<group>"; };
+		745161B91EB94AD300B9116A /* AmazonPaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonPaymentService.m; sourceTree = "<group>"; };
+		745161BB1EB96ABA00B9116A /* ApplePaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplePaymentService.h; sourceTree = "<group>"; };
+		745161BC1EB96ABA00B9116A /* ApplePaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplePaymentService.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7451619D1EB93DD800B9116A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		745161971EB93DD800B9116A = {
+			isa = PBXGroup;
+			children = (
+				745161A21EB93DD800B9116A /* Assignment10 */,
+				745161A11EB93DD800B9116A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		745161A11EB93DD800B9116A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				745161A01EB93DD800B9116A /* Assignment10 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		745161A21EB93DD800B9116A /* Assignment10 */ = {
+			isa = PBXGroup;
+			children = (
+				745161A31EB93DD800B9116A /* main.m */,
+				745161AA1EB941F300B9116A /* GetInput.h */,
+				745161AB1EB941F300B9116A /* GetInput.m */,
+				745161AD1EB9489900B9116A /* PaymentGateway.h */,
+				745161AE1EB9489900B9116A /* PaymentGateway.m */,
+				745161B21EB94AA300B9116A /* StripePaymentService.h */,
+				745161B31EB94AA300B9116A /* StripePaymentService.m */,
+				745161B51EB94AC300B9116A /* PaypaylPaymentService.h */,
+				745161B61EB94AC300B9116A /* PaypaylPaymentService.m */,
+				745161B81EB94AD300B9116A /* AmazonPaymentService.h */,
+				745161B91EB94AD300B9116A /* AmazonPaymentService.m */,
+				745161BB1EB96ABA00B9116A /* ApplePaymentService.h */,
+				745161BC1EB96ABA00B9116A /* ApplePaymentService.m */,
+			);
+			path = Assignment10;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7451619F1EB93DD800B9116A /* Assignment10 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 745161A71EB93DD800B9116A /* Build configuration list for PBXNativeTarget "Assignment10" */;
+			buildPhases = (
+				7451619C1EB93DD800B9116A /* Sources */,
+				7451619D1EB93DD800B9116A /* Frameworks */,
+				7451619E1EB93DD800B9116A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Assignment10;
+			productName = Assignment10;
+			productReference = 745161A01EB93DD800B9116A /* Assignment10 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		745161981EB93DD800B9116A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ayako_sayama;
+				TargetAttributes = {
+					7451619F1EB93DD800B9116A = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7451619B1EB93DD800B9116A /* Build configuration list for PBXProject "Assignment10" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 745161971EB93DD800B9116A;
+			productRefGroup = 745161A11EB93DD800B9116A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7451619F1EB93DD800B9116A /* Assignment10 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7451619C1EB93DD800B9116A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745161BA1EB94AD300B9116A /* AmazonPaymentService.m in Sources */,
+				745161AF1EB9489900B9116A /* PaymentGateway.m in Sources */,
+				745161A41EB93DD800B9116A /* main.m in Sources */,
+				745161BD1EB96ABA00B9116A /* ApplePaymentService.m in Sources */,
+				745161AC1EB941F300B9116A /* GetInput.m in Sources */,
+				745161B41EB94AA300B9116A /* StripePaymentService.m in Sources */,
+				745161B71EB94AC300B9116A /* PaypaylPaymentService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		745161A51EB93DD800B9116A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		745161A61EB93DD800B9116A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		745161A81EB93DD800B9116A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		745161A91EB93DD800B9116A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7451619B1EB93DD800B9116A /* Build configuration list for PBXProject "Assignment10" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				745161A51EB93DD800B9116A /* Debug */,
+				745161A61EB93DD800B9116A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		745161A71EB93DD800B9116A /* Build configuration list for PBXNativeTarget "Assignment10" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				745161A81EB93DD800B9116A /* Debug */,
+				745161A91EB93DD800B9116A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 745161981EB93DD800B9116A /* Project object */;
+}
