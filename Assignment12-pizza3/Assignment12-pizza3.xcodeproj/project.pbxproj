@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		741E80701EBBC3DA00D10F2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 741E806F1EBBC3DA00D10F2B /* main.m */; };
+		741E807E1EBBC43000D10F2B /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 741E80761EBBC43000D10F2B /* Kitchen.m */; };
+		741E807F1EBBC43000D10F2B /* KitchenDelegator.m in Sources */ = {isa = PBXBuildFile; fileRef = 741E80791EBBC43000D10F2B /* KitchenDelegator.m */; };
+		741E80801EBBC43000D10F2B /* Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = 741E807B1EBBC43000D10F2B /* Pizza.m */; };
+		741E80811EBBC43000D10F2B /* GetInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 741E807D1EBBC43000D10F2B /* GetInput.m */; };
+		741E808A1EBBC4EC00D10F2B /* DeliveryService.m in Sources */ = {isa = PBXBuildFile; fileRef = 741E80891EBBC4EC00D10F2B /* DeliveryService.m */; };
+		741E808D1EBBC4F800D10F2B /* DeliveryCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 741E808C1EBBC4F800D10F2B /* DeliveryCar.m */; };
+		741E80901EBBCC0200D10F2B /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 741E808F1EBBCC0200D10F2B /* Manager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		741E806A1EBBC3DA00D10F2B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		741E806C1EBBC3DA00D10F2B /* Assignment12-pizza3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Assignment12-pizza3"; sourceTree = BUILT_PRODUCTS_DIR; };
+		741E806F1EBBC3DA00D10F2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		741E80761EBBC43000D10F2B /* Kitchen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kitchen.m; sourceTree = "<group>"; };
+		741E80771EBBC43000D10F2B /* KitchenDelegator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KitchenDelegator.h; sourceTree = "<group>"; };
+		741E80781EBBC43000D10F2B /* Kitchen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kitchen.h; sourceTree = "<group>"; };
+		741E80791EBBC43000D10F2B /* KitchenDelegator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KitchenDelegator.m; sourceTree = "<group>"; };
+		741E807A1EBBC43000D10F2B /* Pizza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pizza.h; sourceTree = "<group>"; };
+		741E807B1EBBC43000D10F2B /* Pizza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pizza.m; sourceTree = "<group>"; };
+		741E807C1EBBC43000D10F2B /* GetInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetInput.h; sourceTree = "<group>"; };
+		741E807D1EBBC43000D10F2B /* GetInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetInput.m; sourceTree = "<group>"; };
+		741E80881EBBC4EC00D10F2B /* DeliveryService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliveryService.h; sourceTree = "<group>"; };
+		741E80891EBBC4EC00D10F2B /* DeliveryService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliveryService.m; sourceTree = "<group>"; };
+		741E808B1EBBC4F800D10F2B /* DeliveryCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliveryCar.h; sourceTree = "<group>"; };
+		741E808C1EBBC4F800D10F2B /* DeliveryCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliveryCar.m; sourceTree = "<group>"; };
+		741E808E1EBBCC0200D10F2B /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
+		741E808F1EBBCC0200D10F2B /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		741E80691EBBC3DA00D10F2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		741E80631EBBC3DA00D10F2B = {
+			isa = PBXGroup;
+			children = (
+				741E806E1EBBC3DA00D10F2B /* Assignment12-pizza3 */,
+				741E806D1EBBC3DA00D10F2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		741E806D1EBBC3DA00D10F2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				741E806C1EBBC3DA00D10F2B /* Assignment12-pizza3 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		741E806E1EBBC3DA00D10F2B /* Assignment12-pizza3 */ = {
+			isa = PBXGroup;
+			children = (
+				741E808E1EBBCC0200D10F2B /* Manager.h */,
+				741E808F1EBBCC0200D10F2B /* Manager.m */,
+				741E80821EBBC4A800D10F2B /* Delivery */,
+				741E806F1EBBC3DA00D10F2B /* main.m */,
+				741E80761EBBC43000D10F2B /* Kitchen.m */,
+				741E80771EBBC43000D10F2B /* KitchenDelegator.h */,
+				741E80781EBBC43000D10F2B /* Kitchen.h */,
+				741E80791EBBC43000D10F2B /* KitchenDelegator.m */,
+				741E807A1EBBC43000D10F2B /* Pizza.h */,
+				741E807B1EBBC43000D10F2B /* Pizza.m */,
+				741E807C1EBBC43000D10F2B /* GetInput.h */,
+				741E807D1EBBC43000D10F2B /* GetInput.m */,
+			);
+			path = "Assignment12-pizza3";
+			sourceTree = "<group>";
+		};
+		741E80821EBBC4A800D10F2B /* Delivery */ = {
+			isa = PBXGroup;
+			children = (
+				741E80881EBBC4EC00D10F2B /* DeliveryService.h */,
+				741E80891EBBC4EC00D10F2B /* DeliveryService.m */,
+				741E808B1EBBC4F800D10F2B /* DeliveryCar.h */,
+				741E808C1EBBC4F800D10F2B /* DeliveryCar.m */,
+			);
+			name = Delivery;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		741E806B1EBBC3DA00D10F2B /* Assignment12-pizza3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 741E80731EBBC3DA00D10F2B /* Build configuration list for PBXNativeTarget "Assignment12-pizza3" */;
+			buildPhases = (
+				741E80681EBBC3DA00D10F2B /* Sources */,
+				741E80691EBBC3DA00D10F2B /* Frameworks */,
+				741E806A1EBBC3DA00D10F2B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Assignment12-pizza3";
+			productName = "Assignment12-pizza3";
+			productReference = 741E806C1EBBC3DA00D10F2B /* Assignment12-pizza3 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		741E80641EBBC3DA00D10F2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ayako_sayama;
+				TargetAttributes = {
+					741E806B1EBBC3DA00D10F2B = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 741E80671EBBC3DA00D10F2B /* Build configuration list for PBXProject "Assignment12-pizza3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 741E80631EBBC3DA00D10F2B;
+			productRefGroup = 741E806D1EBBC3DA00D10F2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				741E806B1EBBC3DA00D10F2B /* Assignment12-pizza3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		741E80681EBBC3DA00D10F2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				741E808D1EBBC4F800D10F2B /* DeliveryCar.m in Sources */,
+				741E80811EBBC43000D10F2B /* GetInput.m in Sources */,
+				741E80801EBBC43000D10F2B /* Pizza.m in Sources */,
+				741E807E1EBBC43000D10F2B /* Kitchen.m in Sources */,
+				741E807F1EBBC43000D10F2B /* KitchenDelegator.m in Sources */,
+				741E80701EBBC3DA00D10F2B /* main.m in Sources */,
+				741E808A1EBBC4EC00D10F2B /* DeliveryService.m in Sources */,
+				741E80901EBBCC0200D10F2B /* Manager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		741E80711EBBC3DA00D10F2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		741E80721EBBC3DA00D10F2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		741E80741EBBC3DA00D10F2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		741E80751EBBC3DA00D10F2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		741E80671EBBC3DA00D10F2B /* Build configuration list for PBXProject "Assignment12-pizza3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				741E80711EBBC3DA00D10F2B /* Debug */,
+				741E80721EBBC3DA00D10F2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		741E80731EBBC3DA00D10F2B /* Build configuration list for PBXNativeTarget "Assignment12-pizza3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				741E80741EBBC3DA00D10F2B /* Debug */,
+				741E80751EBBC3DA00D10F2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 741E80641EBBC3DA00D10F2B /* Project object */;
+}
