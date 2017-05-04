@@ -10,21 +10,27 @@
 
 @implementation DeliveryService
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _deliveryList = [NSMutableArray array];
+    }
+    return self;
+}
+
 - (void)deliverPizza:(Pizza *)pizza{
     
     DeliveryCar *car = [[DeliveryCar alloc]init];
     [car deliverPizza:pizza];
     
-    [self deliveryList:pizza];
     
-}
-
-- (void)deliveryList: (Pizza*)pizza{
     [_deliveryList addObject:pizza];
     
-    NSLog(@"Delievered Pizza List: %@",_deliveryList);
     //もしくは
-    NSLog(@"%@",[self description]);
+    NSLog(@"Delivered Pizza: ");
+    [self description];
+    
 }
 
 - (NSString*)description{
@@ -32,8 +38,7 @@
     NSMutableString *str = [[NSMutableString alloc]init];
     NSInteger count = 1;
     for (Pizza *pi in _deliveryList) {
-        [str appendFormat:@"Pizza delieverd: \n Pizza %ld [%@]\n",(long)count,pi];
-//        NSLog(@"Pizza delieverd: \n Pizza %ld [%@]\n",(long)count,pi);
+        NSLog(@"Piza Num%ld =, %@",(long)count, [pi description]);
         count++;
     }
     

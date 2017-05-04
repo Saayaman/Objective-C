@@ -11,5 +11,10 @@
 
 
 @interface Pizza : NSObject
+
+@property (readonly, nonatomic) PizzaSize size;
+@property (readonly, nonatomic) NSArray* toppings;
+
+
 - (instancetype)initWithSize: (PizzaSize) size initWithtopping: (NSArray*)toppings;
 @end

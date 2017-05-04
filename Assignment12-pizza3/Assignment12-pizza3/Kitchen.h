@@ -5,15 +5,15 @@
 @class Pizza;
 #import "KitchenDelegator.h"
 @class DeliveryService;
+@class Manager;
 
 
 
+@interface Kitchen : NSObject
 
-@interface Kitchen : NSObject<KitchenDelegate>
+@property Manager *manager;
 
-@property DeliveryService *deliveryService;
+//- (void)processOrder:(NSArray*)order withKitchen:(Kitchen *)kitchen;
 
-- (void)processOrder:(NSArray*)order withKitchen:(Kitchen *)kitchen;
-
-
+- (void)processOrder:(NSArray*)order withKitchen:(Kitchen *)kitchen withManager:(Manager*)manager;
 @end

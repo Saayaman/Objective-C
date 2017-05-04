@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Kitchen.h"
+#import "KitchenDelegator.h"
+#import "Pizza.h"
+@class DeliveryService;
 
-@interface Manager : NSObject
+@interface Manager : NSObject<KitchenDelegate>
+@property DeliveryService *deliveryService;
+
+
 
 @end

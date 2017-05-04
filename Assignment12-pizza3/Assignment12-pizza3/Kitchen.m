@@ -1,20 +1,12 @@
 #import "Kitchen.h"
 #import "Pizza.h"
 #import "DeliveryService.h"
+#import "Manager.h"
 
 @implementation Kitchen
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        _deliveryService = [[DeliveryService alloc]init];
-    }
-    return self;
-}
 
-
-- (void)processOrder:(NSArray*)order withKitchen:(Kitchen *)kitchen{
+- (void)processOrder:(NSArray*)order withKitchen:(Kitchen *)kitchen withManager:(Manager*)manager{
     
     NSMutableArray* topping = [NSMutableArray array];
     PizzaSize size;
@@ -32,41 +24,21 @@
         
     }
     
-    BOOL canMake = [self kitchen:kitchen shouldMakePizzaofSize:size andToppings:topping];
+    BOOL canMake = [manager kitchen:kitchen shouldMakePizzaofSize:size andToppings:topping];
     if (canMake == true) {
         
-        BOOL isUpgraded = [self kitchenshouldUpgradeOrder:size];
+        BOOL isUpgraded = [manager kitchenshouldUpgradeOrder:size];
         if (isUpgraded == true) {
             
             Pizza *pizza = [self makePizzaWithSize:size toppings:topping];
-            if ([self respondsToSelector:@selector(kitchenDidMakePizza:)]) {
-                    [self kitchenDidMakePizza:pizza];
+            if ([manager respondsToSelector:@selector(kitchenDidMakePizza:)]) {
+                    [manager kitchenDidMakePizza:pizza];
             }
         }
     }
     
 
 }
-
-- (BOOL)kitchenshouldUpgradeOrder:(PizzaSize)size{
-  
-    return true;
-}
-
-- (BOOL)kitchen:(Kitchen *)kitchen shouldMakePizzaofSize: (PizzaSize)size andToppings:(NSArray *)toppings{
-
-    BOOL canMakePiza = true;
-    
-    if ((size != 0) && (toppings.count > 0)) {
-        NSLog(@"We can make pizza!");
-        
-    } else{
-        NSLog(@"Sorry, we don't have that piza.");
-        canMakePiza = false;
-    }
-    return canMakePiza;
-}
-
 
 - (BOOL)hasPizzasize:(NSString*)yum{
     
@@ -99,11 +71,6 @@
 }
 
 
-
-- (void)kitchenDidMakePizza:(Pizza *)pizza{
-    NSLog(@"Pizza Made! Ready for Delivery");
-    [_deliveryService deliverPizza:pizza];
-}
 
 
 @end

@@ -3,6 +3,7 @@
 #import "Kitchen.h"
 #import "GetInput.h"
 #import "KitchenDelegator.h"
+#import "Manager.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -10,7 +11,8 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Please pick your pizza size and toppings:");
         Kitchen *restaurantKitchen = [Kitchen new];
         KitchenDelegator *delegator = [[KitchenDelegator alloc]init];
-        delegator.kitchenDelegate = restaurantKitchen;
+        Manager *manager = [[Manager alloc] init];
+        delegator.kitchenDelegate = manager;
         
         
         while (TRUE) {
@@ -25,7 +27,7 @@ int main(int argc, const char * argv[]) {
             NSArray *commandWords = [inputString componentsSeparatedByString:@" "];
             
             
-            [restaurantKitchen processOrder:commandWords withKitchen:restaurantKitchen];
+            [restaurantKitchen processOrder:commandWords withKitchen:restaurantKitchen withManager:manager];
             
             
             
