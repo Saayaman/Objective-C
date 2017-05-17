@@ -44,9 +44,8 @@
 
 
 - (NSString*)changeword: (NSString*)word{
-    
+    //search for location of first vowel in a word
     NSRange range = [word rangeOfCharacterFromSet:_vowel options:NSCaseInsensitiveSearch];
-    NSLog(@"location of vowel: %lu",(unsigned long)range.location);
     NSRange letterRange = NSMakeRange(0, range.location);
     
     NSString *newword = [[NSString alloc]init];
